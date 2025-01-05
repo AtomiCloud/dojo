@@ -9,3 +9,5 @@ From 2 to 25
 ```
 27, 125, 343... 12167, 15625
 ```
+
+Print them as numbers (or integers)
