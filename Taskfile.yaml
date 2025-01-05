@@ -18,6 +18,9 @@ includes:
   01:06:
     taskfile: Taskfile.language.yaml
     dir: levels/01/06-FactorialLoop
+  01:07:
+    taskfile: Taskfile.language.yaml
+    dir: levels/01/07-ComplexLoopSum
 tasks:
   setup:
     desc: Setup the project
@@ -28,6 +31,7 @@ tasks:
       - pls 01:04:setup
       - pls 01:05:setup
       - pls 01:06:setup
+      - pls 01:07:setup
   gen:
     desc: Generate a new project
     cmds:
