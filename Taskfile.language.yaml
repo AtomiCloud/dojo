@@ -1,0 +1,24 @@
+version: 3
+
+tasks:
+  typescript:
+    desc: Run the TypeScript  test
+    cmds:
+      - bun test
+  go:
+    desc: Run the Go test
+    cmds:
+      - richgo test
+  python:
+    desc: Run the Python test
+    cmds:
+      - python ./solution_test.py
+  dotnet:
+    desc: Run the .NET test
+    cmds:
+      - dotnet test
+  setup:
+    desc: Setup the project
+    cmds:
+      - go mod tidy
+      - dotnet restore

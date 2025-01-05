@@ -1,0 +1,12 @@
+version: 3
+
+includes:
+  01:01:
+    taskfile: ./Taskfile.language.yaml
+    dir: levels/01/01-FizzBuzz
+
+tasks:
+  setup:
+    desc: Setup the project
+    cmds:
+      - pls 01:01:setup
