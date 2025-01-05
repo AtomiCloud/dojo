@@ -9,3 +9,5 @@ From 7 to 35,
 ```
 49, 64, 81,100 ... 324, 361, 40, 42, 44 ... 70
 ```
+
+Print them as numbers (or integers)
