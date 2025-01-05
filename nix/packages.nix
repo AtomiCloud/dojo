@@ -26,6 +26,7 @@ let
           gnugrep
           gnused
           jq
+          gomplate
           bash
           git
           infisical

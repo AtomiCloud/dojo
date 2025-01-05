@@ -7,3 +7,5 @@ Print squares of 1 to 20 and 25 to 50.
 ```
 1,4,9,16,25....361, 400,  625, 676, .... 25000
 ```
+
+Print them as numbers (or integers)

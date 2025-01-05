@@ -23,6 +23,7 @@ with packages;
     python
     dotnet
     richgo
+    gomplate
   ];
 
   lint = [
