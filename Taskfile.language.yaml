@@ -1,6 +1,13 @@
 version: 3
 
 tasks:
+  all:
+    desc: Run all tests
+    cmds:
+      - task: typescript
+      - task: go
+      - task: python
+      - task: dotnet
   typescript:
     desc: Run the TypeScript  test
     cmds:
