@@ -27,12 +27,6 @@ public class SpyWriter : Writer
         Console.WriteLine(value);
     }
 
-    public void WriteLine(long value)
-    {
-        Results.Add(value);
-        Console.WriteLine(value);
-    }
-
     public void WriteLine(bool value)
     {
         Results.Add(value);
@@ -56,6 +50,12 @@ public class SpyWriter : Writer
         Results.Add(value);
         Console.WriteLine(value);
     }
+
+    public void WriteLine(long value)
+    {
+        Results.Add(value);
+        Console.WriteLine(value);
+    }
 }
 
 public class Tester
@@ -65,8 +65,7 @@ public class Tester
     {
         var fake = new SpyWriter();
         Solution.Start(fake);
-        List<object> actual = ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz",
-            "16", "17", "Fizz", "19", "Buzz", "Fizz", "22", "23", "Fizz", "Buzz", "26", "Fizz", "28", "29", "FizzBuzz"];
+        List<object> actual = [1438583736240L,204];
         Assert.Equal(actual, fake.Results);
     }
 }
