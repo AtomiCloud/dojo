@@ -65,8 +65,9 @@ public class Tester
     {
         var fake = new SpyWriter();
         Solution.Start(fake);
-        List<object> actual = ["1", "2", "Fizz", "4", "Buzz", "Fizz", "7", "8", "Fizz", "Buzz", "11", "Fizz", "13", "14", "FizzBuzz",
-            "16", "17", "Fizz", "19", "Buzz", "Fizz", "22", "23", "Fizz", "Buzz", "26", "Fizz", "28", "29", "FizzBuzz"];
+        List<object> actual = [
+            4,576,1295,7,8,6560,9801,11,20735,13,14,449,16,17,104975,19,159201,194480,22,23,331775,389376,26,531440,28,29,1799,31,32,1185920,34
+        ];
         Assert.Equal(actual, fake.Results);
     }
 }
