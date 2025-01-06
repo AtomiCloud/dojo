@@ -21,6 +21,9 @@ includes:
   01:07:
     taskfile: Taskfile.language.yaml
     dir: levels/01/07-ComplexLoopSum
+  01:08:
+    taskfile: Taskfile.language.yaml
+    dir: levels/01/08-ComplexLoop2
 tasks:
   setup:
     desc: Setup the project
@@ -32,6 +35,7 @@ tasks:
       - 01:05:setup
       - 01:06:setup
       - 01:07:setup
+      - 01:08:setup
   gen:
     desc: Generate a new project
     cmds:
