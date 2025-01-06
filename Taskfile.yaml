@@ -27,6 +27,39 @@ includes:
   01:09:
     taskfile: Taskfile.language.yaml
     dir: levels/01/09-ProductOf7SumOf8
+  01:10:
+    taskfile: Taskfile.language.yaml
+    dir: levels/01/10-LeapYear
+  01:11:
+    taskfile: Taskfile.language.yaml
+    dir: levels/01/11-JumpingSum
+  01:12:
+    taskfile: Taskfile.language.yaml
+    dir: levels/01/12-MatrixMultiplication
+  01:13:
+    taskfile: Taskfile.language.yaml
+    dir: levels/01/13-JumpingMatrixSum
+  01:14:
+    taskfile: Taskfile.language.yaml
+    dir: levels/01/14-AlternatingMatrixProductSum1
+  01:15:
+    taskfile: Taskfile.language.yaml
+    dir: levels/01/15-AlternatingMatrixProductSum2
+  01:16:
+    taskfile: Taskfile.language.yaml
+    dir: levels/01/16-3LevelSumOfProduct
+  01:17:
+    taskfile: Taskfile.language.yaml
+    dir: levels/01/17-Fibonacci
+  01:18:
+    taskfile: Taskfile.language.yaml
+    dir: levels/01/18-PrimeNumber
+  01:19:
+    taskfile: Taskfile.language.yaml
+    dir: levels/01/19-CompositeFunctionLoop
+  01:20:
+    taskfile: Taskfile.language.yaml
+    dir: levels/01/20-Complex3LevelCompositeFunctions
 tasks:
   setup:
     desc: Setup the project
@@ -40,6 +73,17 @@ tasks:
       - 01:07:setup
       - 01:08:setup
       - 01:09:setup
+      - 01:10:setup
+      - 01:11:setup
+      - 01:12:setup
+      - 01:13:setup
+      - 01:14:setup
+      - 01:15:setup
+      - 01:16:setup
+      - 01:17:setup
+      - 01:18:setup
+      - 01:19:setup
+      - 01:20:setup
   gen:
     desc: Generate a new project
     cmds:
