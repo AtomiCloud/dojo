@@ -36,7 +36,7 @@ QUESTION="$question" NAME="$name" gomplate -f "template/proj.csproj" -o "$folder
 
 yq eval ".includes.\"$level:$question\" = { \"taskfile\": \"Taskfile.language.yaml\", \"dir\": \"levels/$level/$question-$name\" }" -i Taskfile.yaml
 
-yq eval ".tasks.setup.cmds += \"pls $level:$question:setup\"" -i Taskfile.yaml
+yq eval ".tasks.setup.deps += \"$level:$question:setup\"" -i Taskfile.yaml
 
 cd "$folder" || exit
 

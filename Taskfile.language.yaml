@@ -26,6 +26,8 @@ tasks:
       - dotnet test
   setup:
     desc: Setup the project
-    cmds:
-      - go mod tidy
-      - dotnet restore
+    deps:
+      - setup:go
+      - setup:dotnet
+  setup:go: go mod tidy
+  setup:dotnet: dotnet restore

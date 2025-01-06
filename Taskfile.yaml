@@ -24,14 +24,14 @@ includes:
 tasks:
   setup:
     desc: Setup the project
-    cmds:
-      - pls 01:01:setup
-      - pls 01:02:setup
-      - pls 01:03:setup
-      - pls 01:04:setup
-      - pls 01:05:setup
-      - pls 01:06:setup
-      - pls 01:07:setup
+    deps:
+      - 01:01:setup
+      - 01:02:setup
+      - 01:03:setup
+      - 01:04:setup
+      - 01:05:setup
+      - 01:06:setup
+      - 01:07:setup
   gen:
     desc: Generate a new project
     cmds:
